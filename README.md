@@ -206,6 +206,18 @@ jobs:
         run: node test.js
 ```
 
+# TODOs
+
+- [ ] Respond to 'node index.js'
+- [ ] Generate a random color in hex code format
+- [ ] Make the '#' character pattern
+- [ ] Add the random color to the middle of the pattern
+- [ ] Use the random color to visually change the color of the pattern
+- [ ] Respond to 'node index.js red' (hue)
+- [ ] Response to 'node index.js green' (hue)
+- [ ] Respond to 'node index.js blue dark' (hue and luminosity)
+- [ ] Take hue and luminosity into account when generating random colors
+
 ## Stretch goals
 
 - [ ] If a user types "ask" instead of a color name, print questions to ask the user for the name of the color and the luminosity
