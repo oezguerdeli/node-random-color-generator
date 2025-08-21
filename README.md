@@ -208,15 +208,15 @@ jobs:
 
 # TODOs
 
-- [ ] Respond to 'node index.js'
-- [ ] Generate a random color in hex code format
-- [ ] Make the '#' character pattern
-- [ ] Add the random color to the middle of the pattern
-- [ ] Use the random color to visually change the color of the pattern
-- [ ] Respond to 'node index.js red' (hue)
-- [ ] Response to 'node index.js green' (hue)
-- [ ] Respond to 'node index.js blue dark' (hue and luminosity)
-- [ ] Take hue and luminosity into account when generating random colors
+- [x] Respond to 'node index.js'
+- [x] Generate a random color in hex code format
+- [x] Make the '#' character pattern
+- [x] Add the random color to the middle of the pattern
+- [x] Use the random color to visually change the color of the pattern
+- [x] Respond to 'node index.js red' (hue)
+- [x] Response to 'node index.js green' (hue)
+- [x] Respond to 'node index.js blue dark' (hue and luminosity)
+- [x] Take hue and luminosity into account when generating random colors
 
 ## Stretch goals
 
@@ -227,7 +227,7 @@ jobs:
 
 ## Acceptance Criteria
 
-- [ ] Preflight runs through without errors in your project
-  - [ ] Link in your GitHub repo's About section: [Replit demo](https://learn.upleveled.io/pern-extensive-flex-winter-2025-eu/modules/cheatsheet-tasks/#replit)
-- [ ] [Drone bot](https://learn.upleveled.io/pern-extensive-flex-winter-2025-eu/modules/cheatsheet-tasks/#upleveled-drone) has been tagged and responded with a passing message
-- [ ] Correct GitHub commit message format (see [Writing Commit Messages](https://learn.upleveled.io/pern-extensive-flex-winter-2025-eu/modules/cheatsheet-git-github/#writing-commit-messages))
+- [x] Preflight runs through without errors in your project
+  - [x] Link in your GitHub repo's About section: [Replit demo](https://learn.upleveled.io/pern-extensive-flex-winter-2025-eu/modules/cheatsheet-tasks/#replit)
+- [x] [Drone bot](https://learn.upleveled.io/pern-extensive-flex-winter-2025-eu/modules/cheatsheet-tasks/#upleveled-drone) has been tagged and responded with a passing message
+- [x] Correct GitHub commit message format (see [Writing Commit Messages](https://learn.upleveled.io/pern-extensive-flex-winter-2025-eu/modules/cheatsheet-git-github/#writing-commit-messages))
