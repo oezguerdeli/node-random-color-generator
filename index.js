@@ -6,21 +6,22 @@ import randomColor from 'randomcolor';
 const inputHue = 'random';
 const inputLuminosity = 'random';
 
-// Creating a random hex color
-let generatedColor = randomColor({
-  luminosity: inputLuminosity,
-  hue: inputHue,
-});
+// Creating a random hex color variable
+let generatedColor = undefined;
 
 // No arguments, random color will be created and used
 if (argv[2] === undefined) {
-  // Radnom color will be used with random hue and luminosity
-} else if (argv.length < 4 && argv.length >= 2) {
+  // Random color will be used with random hue and luminosity
+  generatedColor = randomColor({
+    luminosity: inputLuminosity,
+    hue: inputHue,
+  });
+} else if (argv.length > 2 && argv.length < 4) {
   generatedColor = randomColor({
     luminosity: inputLuminosity,
     hue: argv[2],
   });
-} else if (argv.length >= 3) {
+} else if (argv.length >= 4) {
   generatedColor = randomColor({
     luminosity: argv[3],
     hue: argv[2],
