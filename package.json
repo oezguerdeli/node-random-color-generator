@@ -11,6 +11,6 @@
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
   "dependencies": {
-    "color-convert": "^3.1.0"
+    "randomcolor": "^0.6.2"
   }
 }
