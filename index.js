@@ -15,15 +15,12 @@ let generatedColor = randomColor({
 // No arguments, random color will be created and used
 if (argv[2] === undefined) {
   // Radnom color will be used with random hue and luminosity
-  console.log('Whe are in case 1');
 } else if (argv.length < 4 && argv.length >= 2) {
-  console.log('Whe are in case 2');
   generatedColor = randomColor({
     luminosity: inputLuminosity,
     hue: argv[2],
   });
 } else if (argv.length >= 3) {
-  console.log('Whe are in case 3');
   generatedColor = randomColor({
     luminosity: argv[3],
     hue: argv[2],
