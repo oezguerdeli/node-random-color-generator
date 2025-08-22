@@ -3,27 +3,27 @@ import chalk from 'chalk';
 import randomColor from 'randomcolor';
 
 // Declaration of variables
-const inputLuminosity = 'light';
+let inputLuminosity = 'random';
+let inputHue = 'random';
 
-// Creating a random hex color variable
 let generatedColor = undefined;
-
-// No arguments, random color will be created and used
+// No arguments, random color will be created with random hue and lum.
 if (argv[2] === undefined) {
   // Random color will be used with random hue and luminosity
-  generatedColor = randomColor();
 } else if (argv.length === 3) {
-  console.log(argv[2]);
-  generatedColor = randomColor({
-    luminosity: inputLuminosity,
-    hue: argv[2],
-  });
+  // Hue is taken from command line, luminosity is random
+  inputHue = argv[2];
 } else if (argv.length > 3) {
-  generatedColor = randomColor({
-    luminosity: argv[3],
-    hue: argv[2],
-  });
+  // Hue and luminosity is taken from command line
+  inputLuminosity = argv[3];
+  inputHue = argv[2];
 }
+
+// Creating a random hex color variable
+generatedColor = randomColor({
+  luminosity: inputLuminosity,
+  hue: inputHue,
+});
 
 console.log(chalk.hex(generatedColor).bold('###############################'));
 console.log(chalk.hex(generatedColor).bold('###############################'));
